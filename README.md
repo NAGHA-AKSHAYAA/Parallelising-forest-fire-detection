@@ -2,7 +2,7 @@
 > In a natural setting, such as a forest, grassland, brush land, or tundra, wildfire, also known asforest, bush, or vegetation fire, can be defined as any uncontrolled and non-prescribed combustion or burning of plants that consumes natural fuels and spreads based on environmental factors. According to federal data cited by the National Park Service, humans cause about 85 percent of all wildfires yearly in the United States. The Annual 2021 Wildfires Report from the National Centres for Environmental Information indicates that over 7 million acres of wildland were consumed by fire that year. According to the National Interagency Fire Centre, California leads the country with the most wildfires and number of acres burned. California-specific charts below on the Top 10 largest, most destructive, and
 deadliest wildfires.
 
-##Parallel Model
+## Parallel Model
 >The framework D2N2Accel (Distributed Deep Neural Network Accelerator for CPU based faster Processing)
 >D2N2Accel Framework- https://github.com/HariniSriraman/D2N2Accel
 >This framework contains AWS SageMaker instance creation and use it for Distributing Neural Network in Data Parallel Mode This framework can be scaled for computing. The dataset comprising of 1000 images was split among the 4 processes. Each process would train the model with the allocated data for itself. After the learning process, each would send the learned parameters/weights back to the master process. The master does the averaging of weights for the next iteration. This reduces overhead significantly compared to feeding the whole data to a single process. MPI is used in the D2N2Accel framework. For the averaging process, MPI Barrier is used to synchronise.
