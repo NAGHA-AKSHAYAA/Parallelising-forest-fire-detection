@@ -3,6 +3,6 @@
 deadliest wildfires.
 
 ## Parallel Model
->The framework D2N2Accel (Distributed Deep Neural Network Accelerator for CPU based faster Processing)
->D2N2Accel Framework- https://github.com/HariniSriraman/D2N2Accel
->This framework contains AWS SageMaker instance creation and use it for Distributing Neural Network in Data Parallel Mode This framework can be scaled for computing. The dataset comprising of 1000 images was split among the 4 processes. Each process would train the model with the allocated data for itself. After the learning process, each would send the learned parameters/weights back to the master process. The master does the averaging of weights for the next iteration. This reduces overhead significantly compared to feeding the whole data to a single process. MPI is used in the D2N2Accel framework. For the averaging process, MPI Barrier is used to synchronise.
+* The framework D2N2Accel (Distributed Deep Neural Network Accelerator for CPU based faster Processing)
+* D2N2Accel Framework- https://github.com/HariniSriraman/D2N2Accel
+* This framework contains AWS SageMaker instance creation and use it for Distributing Neural Network in Data Parallel Mode This framework can be scaled for computing. The dataset comprising of 1000 images was split among the 4 processes. Each process would train the model with the allocated data for itself. After the learning process, each would send the learned parameters/weights back to the master process. The master does the averaging of weights for the next iteration. This reduces overhead significantly compared to feeding the whole data to a single process. MPI is used in the D2N2Accel framework. For the averaging process, MPI Barrier is used to synchronise.
